@@ -1,4 +1,4 @@
-export type FormStep =
+export type FormScreen =
   | "loan-products"
   | "initial"
   | "video-instructions"
