@@ -18,7 +18,7 @@ export function LoanForm() {
   const [formData, setFormData] = useState<LoanFormData>({});
 
   const handleNext = (data: Partial<LoanFormData> = {}) => {
-    setFormData((prev:any) => ({ ...prev, ...data }));
+    setFormData((prev: any) => ({ ...prev, ...data }));
 
     const screens: FormScreen[] = [
       "loan-products", // Moved to first position
@@ -71,10 +71,10 @@ export function LoanForm() {
       <CardHeader className="pb-2">
         <CardTitle className="text-2xl font-bold text-center">
           Get A Loan In 5 Minutes
-          <div className="mt-2 h-1 w-full max-w-[240px] mx-auto bg-gray-300" />
+          <div className="mt-2 h-1 w-full max-w-[240px] mx-auto bg-black" />
         </CardTitle>
       </CardHeader>
-      <CardContent>{renderScreen()}</CardContent>
+      <CardContent className="space-y-6">{renderScreen()}</CardContent>
     </Card>
   );
 }

@@ -15,15 +15,8 @@ export function LoanProducts({ onNext }: LoanProductsProps) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="border rounded-md p-4">
           <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mb-4">
-            <svg className="w-6 h-6 text-blue-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M12 6V18M18 12H6"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+            <img src="/coin_hand.png" className="w-6 h-6 "/>
+              
           </div>
           <h4 className="text-lg font-medium mb-2">Salary Loan</h4>
           <p className="text-sm text-gray-500 mb-4">
@@ -38,15 +31,7 @@ export function LoanProducts({ onNext }: LoanProductsProps) {
 
         <div className="border rounded-md p-4">
           <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mb-4">
-            <svg className="w-6 h-6 text-blue-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M12 6V18M18 12H6"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+          <img src="/coin_hand.png" className="w-6 h-6 "/>
           </div>
           <h4 className="text-lg font-medium mb-2">Corper Loan</h4>
           <p className="text-sm text-gray-500 mb-4">
