@@ -1,5 +1,5 @@
-export type FormScreen =
-  | "loan-products" // Added to the beginning
+export type FormStep =
+  | "loan-products"
   | "initial"
   | "video-instructions"
   | "customer-info"
@@ -9,7 +9,7 @@ export type FormScreen =
   | "video-recording"
 
 export interface LoanFormData {
-  loanType?: "salary" | "corper" // Added new field
+  loanType?: "salary" | "corper"
   employer?: string
   amount?: string
   duration?: string
@@ -17,6 +17,10 @@ export interface LoanFormData {
   lastName?: string
   email?: string
   phone?: string
+  // Added new fields
+  ippisNumber?: string
+  bvn?: string
+  stateOfOrigin?: string
   verificationCode?: string
   acceptedTerms?: boolean
 }
