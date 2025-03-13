@@ -63,7 +63,7 @@ export function Verification({ onNext, email = "michael.ashefor@gmail.com" }: Ve
         </Button>
       </div>
 
-      <Button type="submit" className="w-full bg-blue-700 hover:bg-blue-800" disabled={code.some((digit) => !digit)}>
+      <Button type="submit" className="w-full bg-blue-700 hover:bg-blue-800 rounded-none" disabled={code.some((digit) => !digit)}>
         Verify
       </Button>
     </form>

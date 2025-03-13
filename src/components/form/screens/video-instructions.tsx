@@ -24,7 +24,7 @@ export function VideoInstructions({ onNext }: VideoInstructionsProps) {
       </div>
 
       <div className="space-y-2">
-        <Button className="w-full bg-blue-700 hover:bg-blue-800" onClick={() => onNext({})}>
+        <Button className="w-full bg-blue-700 hover:bg-blue-800 rounded-none" onClick={() => onNext({})}>
           I'm ready
         </Button>
         <Button variant="link" className="w-full text-blue-600" onClick={() => onNext({})}>

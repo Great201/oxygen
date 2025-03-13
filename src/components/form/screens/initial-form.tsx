@@ -41,7 +41,7 @@ export function InitialForm({ onNext }: InitialFormProps) {
         <label htmlFor="amount" className="text-sm font-medium">
           Enter amount
         </label>
-        <Input id="amount" name="amount" type="text" placeholder="Enter amount" required />
+        <Input id="amount" name="amount" type="text" placeholder="Enter amount" required className="w-50"/>
       </div>
 
       <div className="space-y-2">
@@ -61,7 +61,7 @@ export function InitialForm({ onNext }: InitialFormProps) {
         </Select>
       </div>
 
-      <Button type="submit" className="w-full bg-blue-700 hover:bg-blue-800">
+      <Button type="submit" className="bg-blue-700 hover:bg-blue-800 rounded-none">
         Continue
       </Button>
     </form>

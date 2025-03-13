@@ -28,7 +28,7 @@ export function PaymentPlan({ onNext, amount = "150,000", duration = "6" }: Paym
         </Button>
       </div>
 
-      <Button className="w-full bg-blue-700 hover:bg-blue-800" onClick={() => onNext({})}>
+      <Button className="bg-blue-700 hover:bg-blue-800 rounded-none" onClick={() => onNext({})}>
         Continue
       </Button>
     </div>

@@ -24,7 +24,7 @@ export function LoanProducts({ onNext }: LoanProductsProps) {
             with flexible repayment terms of 3 to 12 months. We prioritize transparency and rapid processing typically
             disbursing funds with lightning speed.
           </p>
-          <Button className="bg-[#2B3674] hover:bg-[#1B254B] text-white" onClick={() => onNext({ loanType: "salary" })}>
+          <Button className="bg-[#2B3674] hover:bg-[#1B254B] text-white rounded-none" onClick={() => onNext({ loanType: "salary" })}>
             Apply Here
           </Button>
         </div>
@@ -39,7 +39,7 @@ export function LoanProducts({ onNext }: LoanProductsProps) {
             with flexible repayment terms of 3 to 12 months. We prioritize transparency and rapid processing typically
             disbursing funds with lightning speed.
           </p>
-          <Button className="bg-[#2B3674] hover:bg-[#1B254B] text-white" onClick={() => onNext({ loanType: "corper" })}>
+          <Button className="bg-[#2B3674] hover:bg-[#1B254B] text-white rounded-none" onClick={() => onNext({ loanType: "corper" })}>
             Apply Here
           </Button>
         </div>

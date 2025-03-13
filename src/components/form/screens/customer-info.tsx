@@ -84,7 +84,7 @@ export function CustomerInfo({ onNext }: CustomerInfoProps) {
           </div>
         </div>
 
-        <Button type="submit" className="w-full bg-blue-700 hover:bg-blue-800">
+        <Button type="submit" className="bg-blue-700 hover:bg-blue-800 rounded-none">
           Continue
         </Button>
       </form>
@@ -126,7 +126,7 @@ export function CustomerInfo({ onNext }: CustomerInfoProps) {
         <Input id="stateOfOrigin" name="stateOfOrigin" required />
       </div>
 
-      <Button type="submit" className="w-full bg-blue-700 hover:bg-blue-800">
+      <Button type="submit" className="bg-blue-700 hover:bg-blue-800 rounded-none">
         Continue
       </Button>
     </form>

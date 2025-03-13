@@ -61,7 +61,7 @@ export function LoanApproval({ onNext, formData }: LoanApprovalProps) {
       </div>
 
       <Button
-        className="w-full bg-blue-700 hover:bg-blue-800"
+        className="w-full bg-blue-700 hover:bg-blue-800 rounded-none"
         onClick={() => onNext({ acceptedTerms })}
         disabled={!acceptedTerms}
       >
