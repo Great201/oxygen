@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="relative min-h-[calc(100vh-68px)]">
+      <div className="relative min-h-[calc(100vh-52px)]">
         <div
           className="absolute inset-0 bg-cover bg-center z-0"
           style={{
@@ -16,7 +16,7 @@ export default function Home() {
         </div>
 
         {/* Content container */}
-        <div className="relative z-10 container mx-auto px-4 py-8 min-h-[calc(100vh-68px)] flex flex-col">
+        <div className="relative z-10 container mx-auto px-4 py-6 min-h-[calc(100vh-52px)] flex flex-col">
           <div className="flex-1 flex items-center justify-start">
             <LoanForm />
           </div>
