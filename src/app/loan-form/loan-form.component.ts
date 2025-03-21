@@ -4,7 +4,7 @@ import { HlmCardDirective, HlmCardHeaderDirective, HlmCardTitleDirective, HlmCar
 import { CommonModule } from '@angular/common';
 import { LoanProductsComponent } from './screens/loan-products/loan-products.component';
 import { InitialFormComponent } from './screens/initial-form/initial-form.component';
-// import { VideoInstructionsComponent } from './screens/video-instructions.component';
+import { VideoInstructionsComponent } from './screens/video-instructions/video-instructions.component';
 // import { CustomerInfoComponent } from './screens/customer-info.component';
 // import { VerificationComponent } from './screens/verification.component';
 // import { PaymentPlanComponent } from './screens/payment-plan.component';
@@ -22,7 +22,7 @@ import { InitialFormComponent } from './screens/initial-form/initial-form.compon
     HlmCardContentDirective,
     LoanProductsComponent,
     InitialFormComponent,
-    // VideoInstructionsComponent,
+    VideoInstructionsComponent,
     // CustomerInfoComponent,
     // VerificationComponent,
     // PaymentPlanComponent,
@@ -41,8 +41,8 @@ import { InitialFormComponent } from './screens/initial-form/initial-form.compon
         <ng-container [ngSwitch]="currentScreen">
           <app-loan-products *ngSwitchCase="'loan-products'" (next)="handleNext()"></app-loan-products>
           <app-initial-form *ngSwitchCase="'initial'" (next)="handleNext()"></app-initial-form>
-          <!-- <app-video-instructions *ngSwitchCase="'video-instructions'" (next)="handleNext()"></app-video-instructions>
-          <app-customer-info *ngSwitchCase="'customer-info'" (next)="handleNext()"></app-customer-info>
+          <app-video-instructions *ngSwitchCase="'video-instructions'" (next)="handleNext()"></app-video-instructions>
+          <!-- <app-customer-info *ngSwitchCase="'customer-info'" (next)="handleNext()"></app-customer-info>
           <app-verification *ngSwitchCase="'verification'" [email]="formData.email" (next)="handleNext()"></app-verification>
           <app-payment-plan *ngSwitchCase="'payment-plan'" [amount]="formData.amount" [duration]="formData.duration" (next)="handleNext()"></app-payment-plan>
           <app-loan-approval *ngSwitchCase="'loan-approval'" [formData]="formData" (next)="handleNext()"></app-loan-approval>

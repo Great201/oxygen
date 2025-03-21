@@ -1,6 +1,8 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { HlmInputDirective } from '@spartan-ng/ui-input-helm';
+import { HlmLabelDirective } from '@spartan-ng/ui-label-helm';
 
 @Component({
   selector: 'app-initial-form',
@@ -9,7 +11,7 @@ import { FormsModule } from '@angular/forms';
   template: `
     <form (ngSubmit)="handleSubmit()" class="space-y-6">
       <div class="space-y-2">
-        <label for="employer" class="text-sm font-medium">Select employer</label>
+        <label hlmLabel for="employer" class="text-sm font-medium">Select employer</label>
         <select id="employer" [(ngModel)]="employer" name="employer" required class="w-full border p-2 rounded">
           <option value="" disabled selected>Select employer</option>
           <option value="employer1">Employer 1</option>
@@ -20,7 +22,7 @@ import { FormsModule } from '@angular/forms';
 
       <div class="space-y-2">
         <label for="amount" class="text-sm font-medium">Enter amount</label>
-        <input id="amount" name="amount" type="text" [(ngModel)]="amount" placeholder="Enter amount" required class="w-full border p-2 rounded" />
+        <input hlmInput id="amount" name="amount" type="text" [(ngModel)]="amount" placeholder="Enter amount" required class="w-full border p-2 rounded" />
       </div>
 
       <div class="space-y-2">
@@ -34,7 +36,7 @@ import { FormsModule } from '@angular/forms';
         </select>
       </div>
 
-      <button type="submit" class="bg-blue-700 hover:bg-blue-800 text-white p-2 rounded w-full">
+      <button type="submit" class="bg-blue-700 hover:bg-blue-800 text-white p-2 rounded-none w-full">
         Continue
       </button>
     </form>
