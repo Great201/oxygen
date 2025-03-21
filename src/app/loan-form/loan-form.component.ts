@@ -1,10 +1,9 @@
 import { Component, signal } from '@angular/core';
 import { LoanFormData, FormScreen } from './types';
 import { HlmCardDirective, HlmCardHeaderDirective, HlmCardTitleDirective, HlmCardContentDirective } from '@spartan-ng/ui-card-helm';
-import { HlmButtonDirective } from '@spartan-ng/ui-button-helm';
 import { CommonModule } from '@angular/common';
 import { LoanProductsComponent } from './screens/loan-products/loan-products.component';
-// import { InitialFormComponent } from './screens/initial-form.component';
+import { InitialFormComponent } from './screens/initial-form/initial-form.component';
 // import { VideoInstructionsComponent } from './screens/video-instructions.component';
 // import { CustomerInfoComponent } from './screens/customer-info.component';
 // import { VerificationComponent } from './screens/verification.component';
@@ -21,9 +20,8 @@ import { LoanProductsComponent } from './screens/loan-products/loan-products.com
     HlmCardHeaderDirective,
     HlmCardTitleDirective,
     HlmCardContentDirective,
-    HlmButtonDirective,
     LoanProductsComponent,
-    // InitialFormComponent,
+    InitialFormComponent,
     // VideoInstructionsComponent,
     // CustomerInfoComponent,
     // VerificationComponent,
@@ -42,13 +40,13 @@ import { LoanProductsComponent } from './screens/loan-products/loan-products.com
       <div hlmCardContent class="space-y-6">
         <ng-container [ngSwitch]="currentScreen">
           <app-loan-products *ngSwitchCase="'loan-products'" (next)="handleNext()"></app-loan-products>
-          <!-- <app-initial-form *ngSwitchCase="'initial'" (next)="handleNext($event)"></app-initial-form>
-          <app-video-instructions *ngSwitchCase="'video-instructions'" (next)="handleNext($event)"></app-video-instructions>
-          <app-customer-info *ngSwitchCase="'customer-info'" (next)="handleNext($event)"></app-customer-info>
-          <app-verification *ngSwitchCase="'verification'" [email]="formData.email" (next)="handleNext($event)"></app-verification>
-          <app-payment-plan *ngSwitchCase="'payment-plan'" [amount]="formData.amount" [duration]="formData.duration" (next)="handleNext($event)"></app-payment-plan>
-          <app-loan-approval *ngSwitchCase="'loan-approval'" [formData]="formData" (next)="handleNext($event)"></app-loan-approval>
-          <app-video-recording *ngSwitchCase="'video-recording'" (next)="handleNext($event)"></app-video-recording> -->
+          <app-initial-form *ngSwitchCase="'initial'" (next)="handleNext()"></app-initial-form>
+          <!-- <app-video-instructions *ngSwitchCase="'video-instructions'" (next)="handleNext()"></app-video-instructions>
+          <app-customer-info *ngSwitchCase="'customer-info'" (next)="handleNext()"></app-customer-info>
+          <app-verification *ngSwitchCase="'verification'" [email]="formData.email" (next)="handleNext()"></app-verification>
+          <app-payment-plan *ngSwitchCase="'payment-plan'" [amount]="formData.amount" [duration]="formData.duration" (next)="handleNext()"></app-payment-plan>
+          <app-loan-approval *ngSwitchCase="'loan-approval'" [formData]="formData" (next)="handleNext()"></app-loan-approval>
+          <app-video-recording *ngSwitchCase="'video-recording'" (next)="handleNext()"></app-video-recording> -->
         </ng-container>
       </div>
     </section>

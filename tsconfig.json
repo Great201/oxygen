@@ -1,27 +1,45 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
-    "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
+    "outDir": "./dist/out-tsc",
     "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
     "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "bundler",
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ES2022",
     "paths": {
-      "@/*": ["./src/*"]
+      "@spartan-ng/ui-card-helm": [
+        ".\\libs/ui/ui-card-helm/src/index.ts"
+      ],
+      "@spartan-ng/ui-select-helm": [
+        ".\\libs/ui/ui-select-helm/src/index.ts"
+      ],
+      "@spartan-ng/ui-icon-helm": [
+        ".\\libs/ui/ui-icon-helm/src/index.ts"
+      ],
+      "@spartan-ng/ui-formfield-helm": [
+        ".\\libs/ui/ui-formfield-helm/src/index.ts"
+      ],
+      "@spartan-ng/ui-button-helm": [
+        ".\\libs/ui/ui-button-helm/src/index.ts"
+      ],
+      "@spartan-ng/ui-input-helm": [
+        ".\\libs/ui/ui-input-helm/src/index.ts"
+      ]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
 }
