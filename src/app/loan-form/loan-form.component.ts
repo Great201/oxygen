@@ -1,6 +1,5 @@
 import { Component, signal } from '@angular/core';
 import { LoanFormData, FormScreen } from './types';
-import { HlmCardDirective, HlmCardHeaderDirective, HlmCardTitleDirective, HlmCardContentDirective } from '@spartan-ng/ui-card-helm';
 import { CommonModule } from '@angular/common';
 import { LoanProductsComponent } from './screens/loan-products/loan-products.component';
 import { InitialFormComponent } from './screens/initial-form/initial-form.component';
@@ -16,10 +15,6 @@ import { VideoInstructionsComponent } from './screens/video-instructions/video-i
   standalone: true,
   imports: [
     CommonModule,
-    HlmCardDirective,
-    HlmCardHeaderDirective,
-    HlmCardTitleDirective,
-    HlmCardContentDirective,
     LoanProductsComponent,
     InitialFormComponent,
     VideoInstructionsComponent,
@@ -30,14 +25,14 @@ import { VideoInstructionsComponent } from './screens/video-instructions/video-i
     // VideoRecordingComponent
   ],
   template: `
-    <section class="w-full max-w-md shadow-lg border-0 rounded-none" hlmCard>
-      <div hlmCardHeader>
-        <h3 hlmCardTitle class="text-2xl font-bold text-center">
+    <section class="w-full max-w-md bg-white shadow-lg rounded-lg p-6">
+      <div class="text-center mb-6">
+        <h3 class="text-2xl font-bold text-gray-800 mb-2">
           Get A Loan In 5 Minutes
         </h3>
-        <div class="mt-2 h-1 w-full max-w-[240px] mx-auto bg-black"></div>
+        <div class="h-1 w-48 mx-auto bg-gray-200 rounded-full"></div>
       </div>
-      <div hlmCardContent class="space-y-6">
+      <div class="space-y-6">
         <ng-container [ngSwitch]="currentScreen">
           <app-loan-products *ngSwitchCase="'loan-products'" (next)="handleNext()"></app-loan-products>
           <app-initial-form *ngSwitchCase="'initial'" (next)="handleNext()"></app-initial-form>
