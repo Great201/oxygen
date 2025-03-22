@@ -27,10 +27,10 @@ import { VideoInstructionsComponent } from './screens/video-instructions/video-i
   template: `
     <section class="w-full max-w-md bg-white shadow-lg rounded-lg p-6">
       <div class="text-center mb-6">
-        <h3 class="text-2xl font-bold text-gray-800 mb-2">
+        <h3 class="text-2xl font-bold text-black mb-2">
           Get A Loan In 5 Minutes
         </h3>
-        <div class="h-1 w-48 mx-auto bg-gray-200 rounded-full"></div>
+        <div class="h-1 w-48 mx-auto bg-black rounded-full"></div>
       </div>
       <div class="space-y-6">
         <ng-container [ngSwitch]="currentScreen">
